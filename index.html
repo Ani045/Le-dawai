@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeDawai</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="glass-header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <div class="logo-container">
+                    <img src="assets/le-dawai-1-750.webp" width="150px" height="100px">
+                </div>
+                
+                <!-- Contact Button -->
+                <button class="btn contact-btn" data-bs-toggle="modal" data-bs-target="#contactModal">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" placeholder="Enter your city" required>
+                        </div>
+                        <button type="submit" class="btn submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-section">
+        <!-- Decorative floating dots -->
+        <div class="floating-dots dot-1"></div>
+        <div class="floating-dots dot-2"></div>
+        <div class="floating-dots dot-3"></div>
+
+        <div class="container">
+            <div class="row gy-4 gx-5">
+                <!-- Content Column -->
+                <div class="col-lg-7">
+                    <div class="content-card">
+                        <!-- Hero Content -->
+                        <h1 class="hero-title">क्या आप घुटने के दर्द से परेशान है ?</h1>
+                        <p class="hero-text">अपने घुटने के दर्द को ठीक करे 6 हफ़्तों में वो भी बिना सर्जरी और दवाइयों के साइड इफ़ेक्ट के</p>
+
+                        <!-- Video Container -->
+                        <div class="video-wrapper">
+                       
+                                <iframe 
+                                  width="100%" 
+                                   height="315"
+                                   src="https://www.youtube.com/embed/vLlhYCYFz-M" 
+                                   frameborder="0" 
+                                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                  allowfullscreen>
+                                </iframe>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form and Timer Column -->
+                <div class="col-lg-5">
+                    <!-- Timer Section -->
+                    <div class="timer-section mb-4">
+                        <h3 class="timer-title">Special Offer Ends Soon</h3>
+                        <div class="timer-container">
+                            <div class="timer-box">
+                                <div class="timer-number" id="days">00</div>
+                                <div class="timer-label">Days</div>
+                            </div>
+                            <div class="timer-box">
+                                <div class="timer-number" id="hours">00</div>
+                                <div class="timer-label">Hours</div>
+                            </div>
+                            <div class="timer-box">
+                                <div class="timer-number" id="minutes">00</div>
+                                <div class="timer-label">Minutes</div>
+                            </div>
+                            <div class="timer-box">
+                                <div class="timer-number" id="seconds">00</div>
+                                <div class="timer-label">Seconds</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Container -->
+                    <div class="form-container">
+                        <h3 class="form-title">Contact Us Now</h3>
+                        <form id="contactForm">
+                            <div class="mb-4">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="city" class="form-label">City</label>
+                                <input type="text" class="form-control" id="city" placeholder="Enter your city" required>
+                            </div>
+                            <button type="submit" class="btn submit-btn">Get Information</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="secrets-section">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <div class="decorative-element decorative-element-1"></div>
+                <div class="decorative-element decorative-element-2"></div>
+                <h2 class="section-title-secret">
+                    इस <span class="highlight-text">Live Webinar</span> में आप क्या-क्या सीखेंगे
+                </h2>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Secret 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="secret-card">
+                        <div class="pattern-dots"></div>
+                        <div class="secret-number">Secret #1</div>
+                        <p class="secret-text">डॉक्टर्स से बार-बार परामर्श लेने और बहुत सारी <span class="highlight-word">दवाएं</span> लेने के बाद भी आपको घुटने के दर्द से राहत क्यों नहीं मिल रहा है।</p>
+                    </div>
+                </div>
+
+                <!-- Secret 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="secret-card">
+                        <div class="pattern-dots"></div>
+                        <div class="secret-number">Secret #2</div>
+                        <p class="secret-text">कैसे आप अपने घुटने को <span class="highlight-word">6 हफ़्तों</span> में ठीक कर सकते है वो भी बिना किसी सर्जरी और बिना दवाइयों के साइड इफ़ेक्ट्स के।</p>
+                    </div>
+                </div>
+
+                <!-- Secret 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="secret-card">
+                        <div class="pattern-dots"></div>
+                        <div class="secret-number">Secret #3</div>
+                        <p class="secret-text">आप बिना <span class="highlight-word">क्लिनिक</span> या अस्पताल जाए अपने घुटने के दर्द से कैसे राहत पा सकते हैं।</p>
+                    </div>
+                </div>
+
+                </div>
+               <div class="row justify-content-center g-4 mt-3">
+                <!-- Secret 4 -->
+                <div class="col-lg-4 col-md-6 " >
+                    <div class="secret-card">
+                        <div class="pattern-dots"></div>
+                        <div class="secret-number">Secret #4</div>
+                        <p class="secret-text">घुटना <span class="highlight-word">रिप्लेसमेंट</span> 100% सुरक्षित विकल्प क्यों नहीं है।</p>
+                    </div>
+                </div>
+
+                <!-- Secret 5 -->
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="secret-card">
+                        <div class="pattern-dots"></div>
+                        <div class="secret-number">Secret #5</div>
+                        <p class="secret-text"><span class="highlight-word">3 ऐसी दवाइयाँ</span> जो आपके घुटनों के दर्द से तुरंत राहत देंगी वो भी बिना किसी साइड इफ़ेक्ट के।</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button href="#" data-bs-toggle="modal" data-bs-target="#contactModal" class="cta-button">BOOK FREE SESSION</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="certification-section">
+        <!-- Background Elements -->
+        <div class="floating-bg bg-1"></div>
+        <div class="floating-bg bg-2"></div>
+
+        <div class="container">
+            <div class="trust_title_container">
+                <!-- Decorative Elements -->
+                <div class="trust_decorative_element trust_dot_1"></div>
+                <div class="trust_decorative_element trust_dot_2"></div>
+                <div class="trust_decorative_element trust_dot_3"></div>
+
+                <h2 class="trust_main_heading">
+                    <span class="trust_gradient_text">Years of Trust</span>
+                </h2>
+                <div class="trust_sub_heading">Certified By</div>
+            </div>
+
+            <div class="certifications-container">
+                <!-- Connecting line -->
+                <div class="connecting-line"></div>
+
+                <!-- Certification Images -->
+                <div class="certification-wrapper">
+                    <img src="assets/whatsapp-image-2025-01-07-at-11-20-41_cd9a5796-500.webp" alt="Certification 1" class="certification-image">
+                </div>
+
+                <div class="certification-wrapper">
+                    <img src="assets/ayush-1685186200346.webp" alt="Certification 2" class="certification-image">
+                </div>
+
+                <div class="certification-wrapper">
+                    <img src="assets/gmp2-1685186365112.webp" alt="Certification 3" class="certification-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="kp_kit_wrapper mt-0 pt-5 pb-3">
+        <!-- Background Pattern -->
+        <div class="kp_kit_bg_pattern"></div>
+
+        <div class="container">
+            <!-- Section Title -->
+            <div class="kp_kit_header">
+                <h2 class="kp_kit_title">30 Days Result Knee Pain Relief Kit</h2>
+                <div class="kp_kit_subtitle">For Joint Pain</div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="row g-4">
+                <!-- Hitten Tablets -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="kp_kit_product_card">
+                        <div class="kp_kit_image_box">
+                            <img src="assets/yellow-bold-skincare-product-introduction-instagram-post-13-520x520.webp" alt="Hitten Tablets" class="kp_kit_product_img">
+                        </div>
+                        <h3 class="kp_kit_product_name">Cartilage Support</h3>
+                       
+                        <p class="kp_kit_product_desc">
+                            Hitten Tablets Helps in regenerating the cartilage & support patients from further cartilage damage through enhanced Collagen Type 2 protection
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Galjoint Tablets -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="kp_kit_product_card">
+                        <div class="kp_kit_image_box">
+                            <img src="assets/yellow-bold-skincare-product-introduction-instagram-post-14-520x520.webp" alt="Galjoint Tablets" class="kp_kit_product_img">
+                        </div>
+                        <h3 class="kp_kit_product_name">Strengthening Joints</h3>
+                        
+                        <p class="kp_kit_product_desc">
+                            Galjoint Tablets are a calcium supplement and help in increasing joint bone strands, providing support to knee pain patients and instant relief.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Vitamin D Syrup -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="kp_kit_product_card">
+                        <div class="kp_kit_image_box">
+                            <img src="assets/yellow-bold-skincare-product-introduction-instagram-post-520x520.webp" alt="Galico D3" class="kp_kit_product_img">
+                        </div>
+                        <h3 class="kp_kit_product_name">Vitamin D Syrup</h3>
+                        
+                        <p class="kp_kit_product_desc">
+                            Galico D3 is a vitamin D supplement that helps increase the deposition of calcium in bones and fulfills the vitamin D deficiency.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Jointrub Spray -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="kp_kit_product_card">
+                        <div class="kp_kit_image_box">
+                            <img src="assets/yellow-bold-skincare-product-introduction-instagram-post-6-520x520.webp" alt="Jointrub Spray" class="kp_kit_product_img">
+                        </div>
+                        <h3 class="kp_kit_product_name">Instant Pain Relief</h3>
+                        <p class="kp_kit_product_desc">
+                            Jointrub Spray provides instant relief from knee pain. You can spray it gently overlaid area. Avoid rubbing after application of spray.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="kp_kit_btn_wrapper">
+                <button class="cta-button">BOOK FREE SESSION</button>
+            </div>
+        </div>
+    </section>
+    <section class="doctor-section">
+        <div class="doctor-container">
+            <div class="doctor-image-section">
+                <img src="assets/gradient-vlog-youtube-icon--1--750.webp" alt="Dr. John Doe" class="doctor-image">
+            </div>
+            <div class="doctor-info-section">
+                <h1 class="doctor-name">Dr. Rameshwar Kumar</h1>
+                <div class="doctor-qualification">MBBS, MS, DNB, MCh (Ortho)</div>
+                <p class="doctor-description">
+                    I approve of this ayurvedic product for knee pain. It is based on the principles of Ayurveda and follows the GMP guidelines of FSSAI. This pain relief kit has collagen type 2 supplements, calcium supplements, & Vitamin D syrup, which, in combination, are very helpful in reducing knee pain and helping patients get rid of OA. Moreover, these are food supplements, so it has zero side effects on health.
+                <div class="contact-actions">
+                    <button href="#"  class="cta-button" data-bs-toggle="modal" data-bs-target="#contactModal">Book Consultation</button>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            
+            <div class="testimonial-slider">
+                <div class="slide-container">
+                    <div class="slide-track" id="slideTrack">
+                        <!-- Testimonial Items -->
+                        <div class="slide-item">
+                            <img src="assets/orange-and-white-modern-client-testimonial-instagram-post-1.webp" class="testimonial-image" alt="Testimonial 1">
+                        </div>
+                        <div class="slide-item">
+                            <img src="assets/orange-and-white-modern-client-testimonial-instagram-post-2.webp" class="testimonial-image" alt="Testimonial 2">
+                        </div>
+                        <div class="slide-item">
+                            <img src="assets/orange-and-white-modern-client-testimonial-instagram-post.webp" class="testimonial-image" alt="Testimonial 3">
+                        </div>
+                        <div class="slide-item">
+                            <img src="assets/orange-and-white-modern-client-testimonial-instagram-post-1.webp" class="testimonial-image" alt="Testimonial 1">
+                        </div>
+                        <div class="slide-item">
+                            <img src="assets/orange-and-white-modern-client-testimonial-instagram-post-2.webp" class="testimonial-image" alt="Testimonial 2">
+                        </div>
+                       
+                    </div>
+                </div>
+    
+                <button class="slider-button prev-button" id="prevButton">❮</button>
+                <button class="slider-button next-button" id="nextButton">❯</button>
+    
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="custom-faq-wrapper">
+        <div class="custom-faq-inner">
+            <div class="custom-faq-title-container">
+                <h2 class="custom-faq-heading">Frequently Asked Questions</h2>
+                <p class="custom-faq-subtitle">Find answers to commonly asked questions about our services</p>
+            </div>
+    
+            <!-- FAQ Items -->
+            <div class="custom-faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="custom-faq-box">
+                    <button class="custom-faq-button">
+                        Who can apply it?
+                    </button>
+                    <div class="custom-faq-content">
+                        Anyone with knee pain diagnosed with osteoarthritis can order this pain relief kit.
+                    </div>
+                </div>
+    
+                <!-- FAQ Item 2 -->
+                <div class="custom-faq-box">
+                    <button class="custom-faq-button">
+                        Does it have any side effects?
+                    </button>
+                    <div class="custom-faq-content">
+                        No, These are food supplements so it has zero side-effect on health.
+                    </div>
+                </div>
+    
+                <!-- FAQ Item 3 -->
+                <div class="custom-faq-box">
+                    <button class="custom-faq-button">
+                        How long does it take to treat joint pain with ayurveda ?
+                    </button>
+                    <div class="custom-faq-content">
+                        This medicine kit has a dose of 30 days. You have to take it 3-6 months for the best possible result.
+                    </div>
+                </div>
+    
+                <!-- FAQ Item 4 -->
+                <div class="custom-faq-box">
+                    <button class="custom-faq-button">
+                        Can Joint Pain be treated without surgery with ayurveda?
+                    </button>
+                    <div class="custom-faq-content">
+                        Yes, joint pain patients can be easily treated without surgery if diagnosed in an early stage and started taking medication in the proper guidance of a professional orthopedic doctor.
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    <footer class="custom-footer">
+        <div class="custom-footer-content">
+            <div class="row align-items-center">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <img src="assets/le-dawai-1-750.webp" alt="Logo" class="custom-footer-logo">
+                </div>
+                <div class="col-md-9">
+                    <div class="custom-footer-doctor">
+                        Dr. Rameshwar Kumar
+                    </div>
+                    <div class="custom-footer-text">
+                        This site is not part of the Facebook website or Facebook Inc. Additionally, this site is not endorsed by Facebook. Facebook is a trademark of Facebook Inc.
+                    </div>
+                    <div class="custom-footer-copyright">
+                        <div>Copyright 2025 © All rights Reserved</div>
+                        <div class="custom-footer-credit">
+                            Made by <a href="#" target="_blank"><b>Branding Pioneers</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    
+    <script>
+    document.querySelectorAll('.custom-faq-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            const isCollapsed = button.classList.contains('collapsed');
+            
+            document.querySelectorAll('.custom-faq-button').forEach(otherButton => {
+                if (otherButton !== button) {
+                    otherButton.classList.add('collapsed');
+                    otherButton.nextElementSibling.classList.remove('show');
+                }
+            });
+    
+            button.classList.toggle('collapsed');
+            content.classList.toggle('show');
+        });
+    });
+    
+    </script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const track = document.getElementById('slideTrack');
+        const items = track.getElementsByClassName('slide-item');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+        const dotsContainer = document.getElementById('sliderDots');
+        
+        let currentIndex = 0;
+        let itemsPerSlide = 3; // Default for desktop
+    
+        // Update items per slide based on screen width
+        function updateItemsPerSlide() {
+            if (window.innerWidth >= 992) {
+                itemsPerSlide = 3; // Desktop
+            } else if (window.innerWidth >= 768) {
+                itemsPerSlide = 2; // Tablet
+            } else {
+                itemsPerSlide = 1; // Mobile
+            }
+            updateDots();
+            goToSlide(0); // Reset to first slide when screen size changes
+        }
+    
+        // Create dots
+        function updateDots() {
+            dotsContainer.innerHTML = '';
+            const numberOfDots = Math.ceil(items.length / itemsPerSlide);
+            
+            for (let i = 0; i < numberOfDots; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'dot' + (i === 0 ? ' active' : '');
+                dot.addEventListener('click', () => goToSlide(i));
+                dotsContainer.appendChild(dot);
+            }
+        }
+    
+        // Go to specific slide
+        function goToSlide(index) {
+            currentIndex = index;
+            const slideWidth = (100 / itemsPerSlide);
+            track.style.transform = `translateX(-${index * slideWidth}%)`;
+            
+            // Update dots
+            const dots = dotsContainer.getElementsByClassName('dot');
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.toggle('active', i === index);
+            }
+    
+            // Update button states
+            prevButton.style.opacity = index === 0 ? '0.5' : '1';
+            nextButton.style.opacity = index >= Math.ceil(items.length / itemsPerSlide) - 1 ? '0.5' : '1';
+        }
+    
+        // Previous slide
+        prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                goToSlide(currentIndex - 1);
+            }
+        });
+    
+        // Next slide
+        nextButton.addEventListener('click', () => {
+            if (currentIndex < Math.ceil(items.length / itemsPerSlide) - 1) {
+                goToSlide(currentIndex + 1);
+            }
+        });
+    
+        // Initialize
+        updateItemsPerSlide();
+        
+        // Update on window resize
+        window.addEventListener('resize', updateItemsPerSlide);
+    });
+    </script>
+   
+    <script>
+        // Optional: Add intersection observer for animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.secret-card').forEach(card => {
+            card.style.animationPlayState = 'paused';
+            observer.observe(card);
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Countdown Timer
+        function updateTimer() {
+            // Set the date we're counting down to (24 hours from now)
+            const countDownDate = new Date().getTime() + (24 * 60 * 60 * 1000);
+
+            function update() {
+                const now = new Date().getTime();
+                const distance = countDownDate - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("days").innerHTML = String(days).padStart(2, '0');
+                document.getElementById("hours").innerHTML = String(hours).padStart(2, '0');
+                document.getElementById("minutes").innerHTML = String(minutes).padStart(2, '0');
+                document.getElementById("seconds").innerHTML = String(seconds).padStart(2, '0');
+
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("timer").innerHTML = "EXPIRED";
+                }
+            }
+
+            update();
+            const x = setInterval(update, 1000);
+        }
+
+        // Initialize timer
+        updateTimer();
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                city: document.getElementById('city').value
+            };
+            console.log('Form submitted:', formData);
+            // Handle form submission here
+            alert('फॉर्म सफलतापूर्वक जमा किया गया!');
+            this.reset();
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                city: document.getElementById('city').value
+            };
+            console.log('Form submitted:', formData);
+            // Handle form submission here
+            
+            // Optional: Close modal after submission
+            const modal = bootstrap.Modal.getInstance(document.getElementById('contactModal'));
+            modal.hide();
+        });
+    </script>
+</body>
+</html>
